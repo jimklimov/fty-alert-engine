@@ -691,7 +691,7 @@ if test "x$enable_drafts" = "xyes"; then
     AC_DEFINE(FTY_ALERT_ENGINE_BUILD_DRAFT_API, 1, [Provide draft classes and methods])
     AC_SUBST(pkg_config_defines, "-DFTY_ALERT_ENGINE_BUILD_DRAFT_API=1")
 else
-    AC_MSG_NOTICE([Building stable and legacy API (no draft API)])
+    AC_MSG_NOTICE([Building stable and legacy API (no draft API, 'x$enable_drafts')])
     AC_SUBST(pkg_config_defines, "")
 fi
 
