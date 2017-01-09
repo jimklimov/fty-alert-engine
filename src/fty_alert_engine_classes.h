@@ -76,7 +76,7 @@ FTY_ALERT_ENGINE_PRIVATE void
 #endif // FTY_ALERT_ENGINE_BUILD_DRAFT_API
 
 //  Self test for private classes
-FTY_ALERT_ENGINE_PRIVATE void
+FTY_ALERT_ENGINE_EXPORT void
     fty_alert_engine_private_selftest (bool verbose);
 
 
