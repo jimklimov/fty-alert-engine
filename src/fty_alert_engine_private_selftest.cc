@@ -34,7 +34,7 @@
 //  Run all private classes tests.
 //
 
-#ifdef FTY_ALERT_ENGINE_BUILD_DRAFT_API
+#if FTY_ALERT_ENGINE_BUILD_DRAFT_API
 void
 fty_alert_engine_private_selftest (bool verbose)
 {

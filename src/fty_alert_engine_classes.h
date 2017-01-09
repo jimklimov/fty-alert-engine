@@ -41,7 +41,13 @@
 #include "thresholdrulecomplex.h"
 
 //  *** To avoid double-definitions, only define if building without draft ***
-#ifndef FTY_ALERT_ENGINE_BUILD_DRAFT_API
+#if FTY_ALERT_ENGINE_BUILD_DRAFT_API
+
+//  Self test for private classes
+FTY_ALERT_ENGINE_EXPORT void
+    fty_alert_engine_private_selftest (bool verbose);
+
+#else
 
 //  *** Draft method, defined for internal use only ***
 //  Self test of this class.
@@ -72,12 +78,6 @@ FTY_ALERT_ENGINE_PRIVATE void
 //  Self test of this class.
 FTY_ALERT_ENGINE_PRIVATE void
     thresholdrulecomplex_test (bool verbose);
-
-#else
-
-//  Self test for private classes
-FTY_ALERT_ENGINE_EXPORT void
-    fty_alert_engine_private_selftest (bool verbose);
 
 #endif // FTY_ALERT_ENGINE_BUILD_DRAFT_API
 
